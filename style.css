@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+:root {
+  --background-color: #fafafa;
+  --text-black-color: #2c2c2c;
+  --text-dark-color: #1f1f1f;
+  --text-light-color: #4b4b4b;
+  --gray100: #fafafa;
+  --gray200: #eaeaea;
+  --gray300: #e1e1e1;
+  --margin-s: 16px;
+  --margin-m: 32px;
+  --margin-l: 64px;
+  --margin-xl: 80px;
+  --margin-xxl: 96px;
+}
+body {
+/*  background-color: lavender;*/
+background-image: linear-gradient(orange, white, green);
+  color: var(--text-light-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+#main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header,
+#fig-section,
+#tribute-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  margin-bottom: var(--margin-xl);
+}
+header {
+  margin-top: var(--margin-m);
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  color: var(--text-black-color);
+  text-align: center;
+}
+h1 {
+  font-size: 4.6rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+#img-div {
+  margin-bottom: var(--margin-2);
+}
+#image {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.8s ease-in-out;
+  border-radius: 15%; 
+}
+#img-caption {
+  display: block;
+  position: relative;
+  top: var(--margin-s);
+  text-align: center;
+}
+.quote {
+  color: var(--text-black-color);
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 300;
+}
+#quote-caption {
+  margin: var(--margin-s);
+  font-style: italic;
+  text-align: center;
+}
+#time-line {
+  width: 100%;
+  margin: 48px 0 var(--margin-m) 0;
+}
+.details {
+  width: 100%;
+}
+.acc-content {
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  background-color: gray;
+  border-top: 1px solid rgb(92, 92, 92);
+  color: var(--text-dark-color);
+}
+.acc-content li {
+  padding: 8px 0;
+  line-height: 1.6;
+}
+.acc-content li strong {
+  margin-right: 8px;
+}
+.acc-btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  color: var(--text-dark-color);
+  font-size: 2.2rem;
+  margin-top: 10px;
+}
+.acc-btn:after {
+  content: "+";
+  font-size: 3.2rem;
+  transition: 0.25s;
+}
+.acc-btn span {
+  display: flex;
+}
+.acc-btn span i {
+  font-size: 3.2rem;
+  margin-right: 16px;
+}
+.acc-btn:hover {
+  background-color: gray;
+}
+details[open] > .acc-btn::after {
+  transform: rotate(45deg);
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link i {
+  font-size: 2rem;
+}
+
+a {
+  color: black;
+}
+.box-container{
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 76px;
+  padding-right: 130px;
+}
+.box {
+  display: grid;
+}
+.box img {
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.box-container .box {
+  text-align: center;
+  padding: 16px;
+}
+.readmore-btn {
+  height: 48px;
+  width: 148px;
+  margin-left: 122px;
+  margin-top: 20px;
+  font-size: medium;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+}
+a:link {
+  text-decoration: none;
+}
+.readmore-btn:hover {
+  background-color: black;
+}
+.readmore-btn:hover a {
+  color: ghostwhite;
+}
+.readmore-btn a {
+  color: #blanchedalmond;
+}
+
+.footer {
+  /* display: flex; */
+  width:100%;
+  background: rgb(230,146,9);
+background: radial-gradient(circle, rgba(230,146,9,1) 0%, rgba(233,233,233,0.4543067226890757) 50%, rgba(60,193,26,1) 100%);
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+
+}
+
+.footer-container{
+  width: 100%;
+  display: flex;
+  padding-top: 55px;
+ 
+}
+
+ .box-1 ul li{
+  padding-left: 190px;
+  padding-top: 24px;
+  list-style: none;
+  
+}
+
+/*style*/
+.box-1 ul li h3{
+  color: white;
+  font-size: 22px;
+}
+.box-1 ul li a{
+  color: white;
+  
+}
+.box-1 ul li a:hover{
+  color: #008000;  
+}
+.box-1 ul li i:hover{
+  padding-right: 2rem;
+  position: fixed;
+}
+.box-1 ul li i{
+  color: #008000;
+  padding-right:8px;
+}
+
+
+.credit{
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-size: 23px;
+  padding-bottom: 90px;
+  
+
+}
+span{
+  color: #008000;
+}
+Footer
